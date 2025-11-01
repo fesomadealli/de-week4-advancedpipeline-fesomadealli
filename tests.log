@@ -1,0 +1,46 @@
+[2025-11-01 17:05:11,474] INFO - TestAPIClient - ✅ test_fetch_all_products passed
+[2025-11-01 17:05:11,482] INFO - TestAPIClient - ✅ test_get_paginated_products passed
+[2025-11-01 17:05:11,498] INFO - TestAPIClient - ✅ test_get_all_users passed
+[2025-11-01 17:05:11,514] INFO - TestAPIClient - ✅ test_get_paginated_users passed
+[2025-11-01 17:05:11,960] INFO - TestAnalyzer - ✅ test_analyze_returns_correct_metrics passed
+[2025-11-01 17:05:12,017] INFO - TestEnricher - ✅ test_successful_enrichment passed
+[2025-11-01 17:05:12,038] INFO - TestEnricher - ✅ test_missing_user_join passed
+[2025-11-01 17:05:12,051] INFO - TestEnricher - ✅ test_revenue_calculation passed
+[2025-11-01 17:05:12,071] INFO - TestEnricher - ✅ test_null_values_are_dropped passed
+[2025-11-01 17:29:00,064] INFO - TestAPIClient - ✅ test_fetch_all_products passed
+[2025-11-01 17:29:00,073] INFO - TestAPIClient - ✅ test_get_paginated_products passed
+[2025-11-01 17:29:00,093] INFO - TestAPIClient - ✅ test_get_all_users passed
+[2025-11-01 17:29:00,100] INFO - TestAPIClient - ✅ test_get_paginated_users passed
+[2025-11-01 17:29:53,349] INFO - TestAPIClient - ✅ test_fetch_all_products passed
+[2025-11-01 17:29:53,366] INFO - TestAPIClient - ✅ test_get_paginated_products passed
+[2025-11-01 17:29:53,387] INFO - TestAPIClient - ✅ test_get_all_users passed
+[2025-11-01 17:29:53,401] INFO - TestAPIClient - ✅ test_get_paginated_users passed
+[2025-11-01 17:30:35,546] INFO - TestConfig - test_config_values passed
+[2025-11-01 17:31:26,281] INFO - TestAnalyzer - ✅ test_analyze_returns_correct_metrics passed
+[2025-11-01 17:32:14,979] INFO - TestEnricher - ✅ test_successful_enrichment passed
+[2025-11-01 17:32:15,000] INFO - TestEnricher - ✅ test_missing_user_join passed
+[2025-11-01 17:32:15,028] INFO - TestEnricher - ✅ test_revenue_calculation passed
+[2025-11-01 17:32:15,054] INFO - TestEnricher - ✅ test_null_values_are_dropped passed
+[2025-11-01 17:32:39,477] INFO - TestPipeline - ✅ test_pipeline_run_creates_reports passed
+[2025-11-01 17:35:21,011] INFO - TestAPIClient - ✅ test_fetch_all_products passed
+[2025-11-01 17:35:21,017] INFO - TestAPIClient - ✅ test_get_paginated_products passed
+[2025-11-01 17:35:21,024] INFO - TestAPIClient - ✅ test_get_all_users passed
+[2025-11-01 17:35:21,035] INFO - TestAPIClient - ✅ test_get_paginated_users passed
+[2025-11-01 17:35:21,053] INFO - TestConfig - test_config_values passed
+[2025-11-01 17:35:21,069] INFO - TestAnalyzer - ✅ test_analyze_returns_correct_metrics passed
+[2025-11-01 17:35:21,095] INFO - TestEnricher - ✅ test_successful_enrichment passed
+[2025-11-01 17:35:21,119] INFO - TestEnricher - ✅ test_missing_user_join passed
+[2025-11-01 17:35:21,138] INFO - TestEnricher - ✅ test_revenue_calculation passed
+[2025-11-01 17:35:21,160] INFO - TestEnricher - ✅ test_null_values_are_dropped passed
+[2025-11-01 17:35:21,224] INFO - TestPipeline - ✅ test_pipeline_run_creates_reports passed
+[2025-11-01 17:38:43,044] INFO - TestAPIClient - ✅ test_fetch_all_products passed
+[2025-11-01 17:38:43,057] INFO - TestAPIClient - ✅ test_get_paginated_products passed
+[2025-11-01 17:38:43,076] INFO - TestAPIClient - ✅ test_get_all_users passed
+[2025-11-01 17:38:43,098] INFO - TestAPIClient - ✅ test_get_paginated_users passed
+[2025-11-01 17:38:43,126] INFO - TestConfig - test_config_values passed
+[2025-11-01 17:38:43,167] INFO - TestAnalyzer - ✅ test_analyze_returns_correct_metrics passed
+[2025-11-01 17:38:43,208] INFO - TestEnricher - ✅ test_successful_enrichment passed
+[2025-11-01 17:38:43,233] INFO - TestEnricher - ✅ test_missing_user_join passed
+[2025-11-01 17:38:43,259] INFO - TestEnricher - ✅ test_revenue_calculation passed
+[2025-11-01 17:38:43,282] INFO - TestEnricher - ✅ test_null_values_are_dropped passed
+[2025-11-01 17:38:43,363] INFO - TestPipeline - ✅ test_pipeline_run_creates_reports passed

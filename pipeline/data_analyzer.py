@@ -2,14 +2,18 @@
 
 import pandas as pd
 from tabulate import tabulate
+from logger.logger import get_logger
 
 class DataAnalyzer:
     """Generate insights from enriched product-user data."""
 
+    logger = get_logger("DataAnalyzer", "pipeline.log")
+
     @staticmethod
     def analyze(df: pd.DataFrame, show_table: bool = True) -> dict:
         pd.set_option('display.float_format', '{:,.2f}'.format)
-        # Group by seller
+        DataAnalyzer.logger.info("Starting seller performance analysis...")
+
         grouped = df.groupby("username")
         insights = {}
 
@@ -30,6 +34,13 @@ class DataAnalyzer:
                 "top_category": top_category
             }
 
+            DataAnalyzer.logger.debug(
+                f"{username}: ₦{total_revenue:,.2f} revenue, {product_count} products, "
+                f"₦{avg_price:,.2f} avg price, {avg_rating:.2f} avg rating, "
+                f"{total_quantity} quantity, top category: {top_category}"
+            )
+
+        tab_user_stats = ""
         if show_table:
             table = [
                 [
@@ -43,9 +54,8 @@ class DataAnalyzer:
                 ]
                 for user, data in insights.items()
             ]
-            
             headers = ["Username", "Total Revenue", "Products Sold", "Avg Price", "Avg Rating", "Total Quantity", "Top Category"]
             tab_user_stats = tabulate(table, headers=headers, tablefmt="grid")
-            print(tab_user_stats)
+            DataAnalyzer.logger.info("Seller performance table generated.")
 
         return insights, tab_user_stats

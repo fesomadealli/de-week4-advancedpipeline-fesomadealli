@@ -14,3 +14,288 @@
 [2025-11-01 14:45:39,269] DEBUG - DataEnricher - Product columns: ['id', 'price', 'category', 'quantity', 'rating']
 [2025-11-01 14:45:39,270] DEBUG - DataEnricher - User columns: ['id', 'email', 'username', 'first_name', 'last_name', 'city', 'phone']
 [2025-11-01 14:45:39,318] INFO - DataEnricher - Enriched data shape: (40, 12)
+[2025-11-01 17:05:11,468] INFO - APIClient - Fetching products from https://fakestoreapi.com/products
+[2025-11-01 17:05:11,474] INFO - APIClient - Fetched 2 products.
+[2025-11-01 17:05:11,477] INFO - APIClient - Fetching products from https://fakestoreapi.com/products
+[2025-11-01 17:05:11,479] INFO - APIClient - Fetched 2 products.
+[2025-11-01 17:05:11,481] INFO - APIClient - Paginating products...
+[2025-11-01 17:05:11,481] DEBUG - APIClient - Yielding products 0 to 1
+[2025-11-01 17:05:11,482] DEBUG - APIClient - Yielding products 1 to 2
+[2025-11-01 17:05:11,491] INFO - APIClient - Fetching users from https://fakestoreapi.com/users
+[2025-11-01 17:05:11,495] INFO - APIClient - Fetched 2 users.
+[2025-11-01 17:05:11,506] INFO - APIClient - Fetching users from https://fakestoreapi.com/users
+[2025-11-01 17:05:11,511] INFO - APIClient - Fetched 2 users.
+[2025-11-01 17:05:11,511] INFO - APIClient - Paginating users...
+[2025-11-01 17:05:11,512] DEBUG - APIClient - Yielding users 0 to 1
+[2025-11-01 17:05:11,512] DEBUG - APIClient - Yielding users 1 to 2
+[2025-11-01 17:05:11,529] INFO - ConfigManager - Loaded configuration from pipeline.cfg
+[2025-11-01 17:05:11,534] DEBUG - ConfigManager - Base URL: https://fakestoreapi.com
+[2025-11-01 17:05:11,927] INFO - DataAnalyzer - Starting seller performance analysis...
+[2025-11-01 17:05:11,956] DEBUG - DataAnalyzer - user_a: ₦2,000.00 revenue, 2 products, ₦150.00 avg price, 4.25 avg rating, 15 quantity, top category: electronics
+[2025-11-01 17:05:11,959] DEBUG - DataAnalyzer - user_b: ₦600.00 revenue, 1 products, ₦300.00 avg price, 5.00 avg rating, 2 quantity, top category: jewelery
+[2025-11-01 17:05:11,966] INFO - DataEnricher - Transforming product and user data...
+[2025-11-01 17:05:11,975] DEBUG - DataEnricher - Product columns: ['id', 'price', 'category', 'quantity', 'rating']
+[2025-11-01 17:05:11,975] DEBUG - DataEnricher - User columns: ['id', 'email', 'username', 'first_name', 'last_name', 'city', 'phone']
+[2025-11-01 17:05:12,014] INFO - DataEnricher - Enriched data shape: (2, 12)
+[2025-11-01 17:05:12,022] INFO - DataEnricher - Transforming product and user data...
+[2025-11-01 17:05:12,023] DEBUG - DataEnricher - Product columns: ['id', 'price', 'category', 'quantity', 'rating']
+[2025-11-01 17:05:12,023] DEBUG - DataEnricher - User columns: ['id', 'email', 'username', 'first_name', 'last_name', 'city', 'phone']
+[2025-11-01 17:05:12,037] INFO - DataEnricher - Enriched data shape: (0, 12)
+[2025-11-01 17:05:12,041] INFO - DataEnricher - Transforming product and user data...
+[2025-11-01 17:05:12,043] DEBUG - DataEnricher - Product columns: ['id', 'price', 'category', 'quantity', 'rating']
+[2025-11-01 17:05:12,043] DEBUG - DataEnricher - User columns: ['id', 'email', 'username', 'first_name', 'last_name', 'city', 'phone']
+[2025-11-01 17:05:12,051] INFO - DataEnricher - Enriched data shape: (1, 12)
+[2025-11-01 17:05:12,058] INFO - DataEnricher - Transforming product and user data...
+[2025-11-01 17:05:12,060] DEBUG - DataEnricher - Product columns: ['id', 'price', 'category', 'quantity', 'rating']
+[2025-11-01 17:05:12,061] DEBUG - DataEnricher - User columns: ['id', 'email', 'username', 'first_name', 'last_name', 'city', 'phone']
+[2025-11-01 17:05:12,070] INFO - DataEnricher - Enriched data shape: (0, 12)
+[2025-11-01 17:05:12,075] INFO - Pipeline - Initializing pipeline...
+[2025-11-01 17:05:12,076] INFO - ConfigManager - Loaded configuration from pipeline.cfg
+[2025-11-01 17:05:12,076] DEBUG - ConfigManager - Base URL: https://fakestoreapi.com
+[2025-11-01 17:05:12,076] DEBUG - ConfigManager - Pagination Limit: 10
+[2025-11-01 17:05:12,077] INFO - Pipeline - 🔧 Starting pipeline...
+[2025-11-01 17:05:12,078] INFO - Pipeline - 📦 Fetching product data...
+[2025-11-01 17:05:12,078] INFO - APIClient - Fetching products from https://fakestoreapi.com/products
+[2025-11-01 17:05:12,082] INFO - APIClient - Fetched 2 products.
+[2025-11-01 17:05:12,084] INFO - APIClient - Paginating products...
+[2025-11-01 17:05:12,084] DEBUG - APIClient - Yielding products 0 to 2
+[2025-11-01 17:05:12,085] INFO - Pipeline - Total products collected: 4
+[2025-11-01 17:05:12,085] INFO - Pipeline - 👤 Fetching user data...
+[2025-11-01 17:05:12,085] INFO - APIClient - Fetching users from https://fakestoreapi.com/users
+[2025-11-01 17:05:12,087] INFO - APIClient - Fetched 2 users.
+[2025-11-01 17:05:12,088] INFO - APIClient - Paginating users...
+[2025-11-01 17:05:12,088] DEBUG - APIClient - Yielding users 0 to 2
+[2025-11-01 17:05:12,088] INFO - Pipeline - Total users collected: 4
+[2025-11-01 17:05:12,089] INFO - Pipeline - 🔗 Enriching data...
+[2025-11-01 17:05:12,090] INFO - DataEnricher - Transforming product and user data...
+[2025-11-01 17:05:12,093] DEBUG - DataEnricher - Product columns: ['id', 'price', 'category', 'quantity', 'rating']
+[2025-11-01 17:05:12,093] DEBUG - DataEnricher - User columns: ['id', 'email', 'username', 'first_name', 'last_name', 'city', 'phone']
+[2025-11-01 17:05:12,107] INFO - DataEnricher - Enriched data shape: (8, 12)
+[2025-11-01 17:05:12,107] INFO - Pipeline - Enriched data shape: (8, 12)
+[2025-11-01 17:05:12,107] INFO - Pipeline - 📊 Analyzing seller performance...
+[2025-11-01 17:05:12,108] INFO - DataAnalyzer - Starting seller performance analysis...
+[2025-11-01 17:05:12,110] DEBUG - DataAnalyzer - user_a: ₦4,000.00 revenue, 4 products, ₦100.00 avg price, 4.50 avg rating, 40 quantity, top category: electronics
+[2025-11-01 17:05:12,111] DEBUG - DataAnalyzer - user_b: ₦4,000.00 revenue, 4 products, ₦200.00 avg price, 4.00 avg rating, 20 quantity, top category: jewelery
+[2025-11-01 17:05:12,112] INFO - DataAnalyzer - Seller performance table generated.
+[2025-11-01 17:05:12,113] INFO - Pipeline - 💾 Saving report to seller_performance_report.json...
+[2025-11-01 17:29:00,059] INFO - APIClient - Fetching products from https://fakestoreapi.com/products
+[2025-11-01 17:29:00,063] INFO - APIClient - Fetched 2 products.
+[2025-11-01 17:29:00,067] INFO - APIClient - Fetching products from https://fakestoreapi.com/products
+[2025-11-01 17:29:00,069] INFO - APIClient - Fetched 2 products.
+[2025-11-01 17:29:00,069] INFO - APIClient - Paginating products...
+[2025-11-01 17:29:00,070] DEBUG - APIClient - Yielding products 0 to 1
+[2025-11-01 17:29:00,073] DEBUG - APIClient - Yielding products 1 to 2
+[2025-11-01 17:29:00,082] INFO - APIClient - Fetching users from https://fakestoreapi.com/users
+[2025-11-01 17:29:00,084] INFO - APIClient - Fetched 2 users.
+[2025-11-01 17:29:00,097] INFO - APIClient - Fetching users from https://fakestoreapi.com/users
+[2025-11-01 17:29:00,099] INFO - APIClient - Fetched 2 users.
+[2025-11-01 17:29:00,099] INFO - APIClient - Paginating users...
+[2025-11-01 17:29:00,100] DEBUG - APIClient - Yielding users 0 to 1
+[2025-11-01 17:29:00,100] DEBUG - APIClient - Yielding users 1 to 2
+[2025-11-01 17:29:53,329] INFO - APIClient - Fetching products from https://fakestoreapi.com/products
+[2025-11-01 17:29:53,348] INFO - APIClient - Fetched 2 products.
+[2025-11-01 17:29:53,356] INFO - APIClient - Fetching products from https://fakestoreapi.com/products
+[2025-11-01 17:29:53,364] INFO - APIClient - Fetched 2 products.
+[2025-11-01 17:29:53,365] INFO - APIClient - Paginating products...
+[2025-11-01 17:29:53,366] DEBUG - APIClient - Yielding products 0 to 1
+[2025-11-01 17:29:53,366] DEBUG - APIClient - Yielding products 1 to 2
+[2025-11-01 17:29:53,379] INFO - APIClient - Fetching users from https://fakestoreapi.com/users
+[2025-11-01 17:29:53,387] INFO - APIClient - Fetched 2 users.
+[2025-11-01 17:29:53,396] INFO - APIClient - Fetching users from https://fakestoreapi.com/users
+[2025-11-01 17:29:53,400] INFO - APIClient - Fetched 2 users.
+[2025-11-01 17:29:53,401] INFO - APIClient - Paginating users...
+[2025-11-01 17:29:53,401] DEBUG - APIClient - Yielding users 0 to 1
+[2025-11-01 17:29:53,401] DEBUG - APIClient - Yielding users 1 to 2
+[2025-11-01 17:30:35,541] INFO - ConfigManager - Loaded configuration from pipeline.cfg
+[2025-11-01 17:30:35,542] DEBUG - ConfigManager - Base URL: https://fakestoreapi.com
+[2025-11-01 17:30:35,545] INFO - ConfigManager - Loaded configuration from pipeline.cfg
+[2025-11-01 17:30:35,546] DEBUG - ConfigManager - Base URL: https://fakestoreapi.com
+[2025-11-01 17:30:35,546] DEBUG - ConfigManager - Pagination Limit: 10
+[2025-11-01 17:31:26,267] INFO - DataAnalyzer - Starting seller performance analysis...
+[2025-11-01 17:31:26,279] DEBUG - DataAnalyzer - user_a: ₦2,000.00 revenue, 2 products, ₦150.00 avg price, 4.25 avg rating, 15 quantity, top category: electronics
+[2025-11-01 17:31:26,281] DEBUG - DataAnalyzer - user_b: ₦600.00 revenue, 1 products, ₦300.00 avg price, 5.00 avg rating, 2 quantity, top category: jewelery
+[2025-11-01 17:32:14,960] INFO - DataEnricher - Transforming product and user data...
+[2025-11-01 17:32:14,965] DEBUG - DataEnricher - Product columns: ['id', 'price', 'category', 'quantity', 'rating']
+[2025-11-01 17:32:14,965] DEBUG - DataEnricher - User columns: ['id', 'email', 'username', 'first_name', 'last_name', 'city', 'phone']
+[2025-11-01 17:32:14,979] INFO - DataEnricher - Enriched data shape: (2, 12)
+[2025-11-01 17:32:14,983] INFO - DataEnricher - Transforming product and user data...
+[2025-11-01 17:32:14,993] DEBUG - DataEnricher - Product columns: ['id', 'price', 'category', 'quantity', 'rating']
+[2025-11-01 17:32:14,993] DEBUG - DataEnricher - User columns: ['id', 'email', 'username', 'first_name', 'last_name', 'city', 'phone']
+[2025-11-01 17:32:15,000] INFO - DataEnricher - Enriched data shape: (0, 12)
+[2025-11-01 17:32:15,008] INFO - DataEnricher - Transforming product and user data...
+[2025-11-01 17:32:15,010] DEBUG - DataEnricher - Product columns: ['id', 'price', 'category', 'quantity', 'rating']
+[2025-11-01 17:32:15,011] DEBUG - DataEnricher - User columns: ['id', 'email', 'username', 'first_name', 'last_name', 'city', 'phone']
+[2025-11-01 17:32:15,027] INFO - DataEnricher - Enriched data shape: (1, 12)
+[2025-11-01 17:32:15,035] INFO - DataEnricher - Transforming product and user data...
+[2025-11-01 17:32:15,042] DEBUG - DataEnricher - Product columns: ['id', 'price', 'category', 'quantity', 'rating']
+[2025-11-01 17:32:15,042] DEBUG - DataEnricher - User columns: ['id', 'email', 'username', 'first_name', 'last_name', 'city', 'phone']
+[2025-11-01 17:32:15,053] INFO - DataEnricher - Enriched data shape: (0, 12)
+[2025-11-01 17:32:39,338] INFO - Pipeline - Initializing pipeline...
+[2025-11-01 17:32:39,341] INFO - ConfigManager - Loaded configuration from pipeline.cfg
+[2025-11-01 17:32:39,341] DEBUG - ConfigManager - Base URL: https://fakestoreapi.com
+[2025-11-01 17:32:39,341] DEBUG - ConfigManager - Pagination Limit: 10
+[2025-11-01 17:32:39,343] INFO - Pipeline - 🔧 Starting pipeline...
+[2025-11-01 17:32:39,343] INFO - Pipeline - 📦 Fetching product data...
+[2025-11-01 17:32:39,343] INFO - APIClient - Fetching products from https://fakestoreapi.com/products
+[2025-11-01 17:32:39,348] INFO - APIClient - Fetched 2 products.
+[2025-11-01 17:32:39,349] INFO - APIClient - Paginating products...
+[2025-11-01 17:32:39,349] DEBUG - APIClient - Yielding products 0 to 2
+[2025-11-01 17:32:39,349] INFO - Pipeline - Total products collected: 4
+[2025-11-01 17:32:39,349] INFO - Pipeline - 👤 Fetching user data...
+[2025-11-01 17:32:39,349] INFO - APIClient - Fetching users from https://fakestoreapi.com/users
+[2025-11-01 17:32:39,351] INFO - APIClient - Fetched 2 users.
+[2025-11-01 17:32:39,351] INFO - APIClient - Paginating users...
+[2025-11-01 17:32:39,352] DEBUG - APIClient - Yielding users 0 to 2
+[2025-11-01 17:32:39,352] INFO - Pipeline - Total users collected: 4
+[2025-11-01 17:32:39,352] INFO - Pipeline - 🔗 Enriching data...
+[2025-11-01 17:32:39,353] INFO - DataEnricher - Transforming product and user data...
+[2025-11-01 17:32:39,355] DEBUG - DataEnricher - Product columns: ['id', 'price', 'category', 'quantity', 'rating']
+[2025-11-01 17:32:39,356] DEBUG - DataEnricher - User columns: ['id', 'email', 'username', 'first_name', 'last_name', 'city', 'phone']
+[2025-11-01 17:32:39,375] INFO - DataEnricher - Enriched data shape: (8, 12)
+[2025-11-01 17:32:39,376] INFO - Pipeline - Enriched data shape: (8, 12)
+[2025-11-01 17:32:39,376] INFO - Pipeline - 📊 Analyzing seller performance...
+[2025-11-01 17:32:39,377] INFO - DataAnalyzer - Starting seller performance analysis...
+[2025-11-01 17:32:39,391] DEBUG - DataAnalyzer - user_a: ₦4,000.00 revenue, 4 products, ₦100.00 avg price, 4.50 avg rating, 40 quantity, top category: electronics
+[2025-11-01 17:32:39,396] DEBUG - DataAnalyzer - user_b: ₦4,000.00 revenue, 4 products, ₦200.00 avg price, 4.00 avg rating, 20 quantity, top category: jewelery
+[2025-11-01 17:32:39,404] INFO - DataAnalyzer - Seller performance table generated.
+[2025-11-01 17:32:39,404] INFO - Pipeline - 💾 Saving report to seller_performance_report.json...
+[2025-11-01 17:32:39,409] INFO - Pipeline - 📝 Saving summary to seller_performance_summary.txt...
+[2025-11-01 17:32:39,412] INFO - Pipeline - ✅ Pipeline completed successfully.
+[2025-11-01 17:35:21,006] INFO - APIClient - Fetching products from https://fakestoreapi.com/products
+[2025-11-01 17:35:21,011] INFO - APIClient - Fetched 2 products.
+[2025-11-01 17:35:21,015] INFO - APIClient - Fetching products from https://fakestoreapi.com/products
+[2025-11-01 17:35:21,016] INFO - APIClient - Fetched 2 products.
+[2025-11-01 17:35:21,016] INFO - APIClient - Paginating products...
+[2025-11-01 17:35:21,017] DEBUG - APIClient - Yielding products 0 to 1
+[2025-11-01 17:35:21,017] DEBUG - APIClient - Yielding products 1 to 2
+[2025-11-01 17:35:21,020] INFO - APIClient - Fetching users from https://fakestoreapi.com/users
+[2025-11-01 17:35:21,023] INFO - APIClient - Fetched 2 users.
+[2025-11-01 17:35:21,030] INFO - APIClient - Fetching users from https://fakestoreapi.com/users
+[2025-11-01 17:35:21,034] INFO - APIClient - Fetched 2 users.
+[2025-11-01 17:35:21,035] INFO - APIClient - Paginating users...
+[2025-11-01 17:35:21,035] DEBUG - APIClient - Yielding users 0 to 1
+[2025-11-01 17:35:21,035] DEBUG - APIClient - Yielding users 1 to 2
+[2025-11-01 17:35:21,044] INFO - ConfigManager - Loaded configuration from pipeline.cfg
+[2025-11-01 17:35:21,046] DEBUG - ConfigManager - Base URL: https://fakestoreapi.com
+[2025-11-01 17:35:21,052] INFO - ConfigManager - Loaded configuration from pipeline.cfg
+[2025-11-01 17:35:21,053] DEBUG - ConfigManager - Base URL: https://fakestoreapi.com
+[2025-11-01 17:35:21,053] DEBUG - ConfigManager - Pagination Limit: 10
+[2025-11-01 17:35:21,062] INFO - DataAnalyzer - Starting seller performance analysis...
+[2025-11-01 17:35:21,068] DEBUG - DataAnalyzer - user_a: ₦2,000.00 revenue, 2 products, ₦150.00 avg price, 4.25 avg rating, 15 quantity, top category: electronics
+[2025-11-01 17:35:21,069] DEBUG - DataAnalyzer - user_b: ₦600.00 revenue, 1 products, ₦300.00 avg price, 5.00 avg rating, 2 quantity, top category: jewelery
+[2025-11-01 17:35:21,078] INFO - DataEnricher - Transforming product and user data...
+[2025-11-01 17:35:21,081] DEBUG - DataEnricher - Product columns: ['id', 'price', 'category', 'quantity', 'rating']
+[2025-11-01 17:35:21,082] DEBUG - DataEnricher - User columns: ['id', 'email', 'username', 'first_name', 'last_name', 'city', 'phone']
+[2025-11-01 17:35:21,094] INFO - DataEnricher - Enriched data shape: (2, 12)
+[2025-11-01 17:35:21,097] INFO - DataEnricher - Transforming product and user data...
+[2025-11-01 17:35:21,102] DEBUG - DataEnricher - Product columns: ['id', 'price', 'category', 'quantity', 'rating']
+[2025-11-01 17:35:21,103] DEBUG - DataEnricher - User columns: ['id', 'email', 'username', 'first_name', 'last_name', 'city', 'phone']
+[2025-11-01 17:35:21,119] INFO - DataEnricher - Enriched data shape: (0, 12)
+[2025-11-01 17:35:21,126] INFO - DataEnricher - Transforming product and user data...
+[2025-11-01 17:35:21,132] DEBUG - DataEnricher - Product columns: ['id', 'price', 'category', 'quantity', 'rating']
+[2025-11-01 17:35:21,133] DEBUG - DataEnricher - User columns: ['id', 'email', 'username', 'first_name', 'last_name', 'city', 'phone']
+[2025-11-01 17:35:21,137] INFO - DataEnricher - Enriched data shape: (1, 12)
+[2025-11-01 17:35:21,144] INFO - DataEnricher - Transforming product and user data...
+[2025-11-01 17:35:21,151] DEBUG - DataEnricher - Product columns: ['id', 'price', 'category', 'quantity', 'rating']
+[2025-11-01 17:35:21,151] DEBUG - DataEnricher - User columns: ['id', 'email', 'username', 'first_name', 'last_name', 'city', 'phone']
+[2025-11-01 17:35:21,159] INFO - DataEnricher - Enriched data shape: (0, 12)
+[2025-11-01 17:35:21,164] INFO - Pipeline - Initializing pipeline...
+[2025-11-01 17:35:21,169] INFO - ConfigManager - Loaded configuration from pipeline.cfg
+[2025-11-01 17:35:21,170] DEBUG - ConfigManager - Base URL: https://fakestoreapi.com
+[2025-11-01 17:35:21,170] DEBUG - ConfigManager - Pagination Limit: 10
+[2025-11-01 17:35:21,173] INFO - Pipeline - 🔧 Starting pipeline...
+[2025-11-01 17:35:21,175] INFO - Pipeline - 📦 Fetching product data...
+[2025-11-01 17:35:21,175] INFO - APIClient - Fetching products from https://fakestoreapi.com/products
+[2025-11-01 17:35:21,177] INFO - APIClient - Fetched 2 products.
+[2025-11-01 17:35:21,178] INFO - APIClient - Paginating products...
+[2025-11-01 17:35:21,182] DEBUG - APIClient - Yielding products 0 to 2
+[2025-11-01 17:35:21,182] INFO - Pipeline - Total products collected: 4
+[2025-11-01 17:35:21,182] INFO - Pipeline - 👤 Fetching user data...
+[2025-11-01 17:35:21,183] INFO - APIClient - Fetching users from https://fakestoreapi.com/users
+[2025-11-01 17:35:21,185] INFO - APIClient - Fetched 2 users.
+[2025-11-01 17:35:21,185] INFO - APIClient - Paginating users...
+[2025-11-01 17:35:21,186] DEBUG - APIClient - Yielding users 0 to 2
+[2025-11-01 17:35:21,186] INFO - Pipeline - Total users collected: 4
+[2025-11-01 17:35:21,186] INFO - Pipeline - 🔗 Enriching data...
+[2025-11-01 17:35:21,186] INFO - DataEnricher - Transforming product and user data...
+[2025-11-01 17:35:21,191] DEBUG - DataEnricher - Product columns: ['id', 'price', 'category', 'quantity', 'rating']
+[2025-11-01 17:35:21,191] DEBUG - DataEnricher - User columns: ['id', 'email', 'username', 'first_name', 'last_name', 'city', 'phone']
+[2025-11-01 17:35:21,201] INFO - DataEnricher - Enriched data shape: (8, 12)
+[2025-11-01 17:35:21,201] INFO - Pipeline - Enriched data shape: (8, 12)
+[2025-11-01 17:35:21,201] INFO - Pipeline - 📊 Analyzing seller performance...
+[2025-11-01 17:35:21,202] INFO - DataAnalyzer - Starting seller performance analysis...
+[2025-11-01 17:35:21,205] DEBUG - DataAnalyzer - user_a: ₦4,000.00 revenue, 4 products, ₦100.00 avg price, 4.50 avg rating, 40 quantity, top category: electronics
+[2025-11-01 17:35:21,208] DEBUG - DataAnalyzer - user_b: ₦4,000.00 revenue, 4 products, ₦200.00 avg price, 4.00 avg rating, 20 quantity, top category: jewelery
+[2025-11-01 17:35:21,210] INFO - DataAnalyzer - Seller performance table generated.
+[2025-11-01 17:35:21,211] INFO - Pipeline - 💾 Saving report to seller_performance_report.json...
+[2025-11-01 17:35:21,212] INFO - Pipeline - 📝 Saving summary to seller_performance_summary.txt...
+[2025-11-01 17:35:21,217] INFO - Pipeline - ✅ Pipeline completed successfully.
+[2025-11-01 17:38:43,015] INFO - APIClient - Fetching products from https://fakestoreapi.com/products
+[2025-11-01 17:38:43,044] INFO - APIClient - Fetched 2 products.
+[2025-11-01 17:38:43,049] INFO - APIClient - Fetching products from https://fakestoreapi.com/products
+[2025-11-01 17:38:43,055] INFO - APIClient - Fetched 2 products.
+[2025-11-01 17:38:43,056] INFO - APIClient - Paginating products...
+[2025-11-01 17:38:43,056] DEBUG - APIClient - Yielding products 0 to 1
+[2025-11-01 17:38:43,057] DEBUG - APIClient - Yielding products 1 to 2
+[2025-11-01 17:38:43,067] INFO - APIClient - Fetching users from https://fakestoreapi.com/users
+[2025-11-01 17:38:43,076] INFO - APIClient - Fetched 2 users.
+[2025-11-01 17:38:43,089] INFO - APIClient - Fetching users from https://fakestoreapi.com/users
+[2025-11-01 17:38:43,096] INFO - APIClient - Fetched 2 users.
+[2025-11-01 17:38:43,097] INFO - APIClient - Paginating users...
+[2025-11-01 17:38:43,097] DEBUG - APIClient - Yielding users 0 to 1
+[2025-11-01 17:38:43,097] DEBUG - APIClient - Yielding users 1 to 2
+[2025-11-01 17:38:43,114] INFO - ConfigManager - Loaded configuration from pipeline.cfg
+[2025-11-01 17:38:43,116] DEBUG - ConfigManager - Base URL: https://fakestoreapi.com
+[2025-11-01 17:38:43,123] INFO - ConfigManager - Loaded configuration from pipeline.cfg
+[2025-11-01 17:38:43,125] DEBUG - ConfigManager - Base URL: https://fakestoreapi.com
+[2025-11-01 17:38:43,125] DEBUG - ConfigManager - Pagination Limit: 10
+[2025-11-01 17:38:43,141] INFO - DataAnalyzer - Starting seller performance analysis...
+[2025-11-01 17:38:43,158] DEBUG - DataAnalyzer - user_a: ₦2,000.00 revenue, 2 products, ₦150.00 avg price, 4.25 avg rating, 15 quantity, top category: electronics
+[2025-11-01 17:38:43,166] DEBUG - DataAnalyzer - user_b: ₦600.00 revenue, 1 products, ₦300.00 avg price, 5.00 avg rating, 2 quantity, top category: jewelery
+[2025-11-01 17:38:43,182] INFO - DataEnricher - Transforming product and user data...
+[2025-11-01 17:38:43,186] DEBUG - DataEnricher - Product columns: ['id', 'price', 'category', 'quantity', 'rating']
+[2025-11-01 17:38:43,188] DEBUG - DataEnricher - User columns: ['id', 'email', 'username', 'first_name', 'last_name', 'city', 'phone']
+[2025-11-01 17:38:43,207] INFO - DataEnricher - Enriched data shape: (2, 12)
+[2025-11-01 17:38:43,213] INFO - DataEnricher - Transforming product and user data...
+[2025-11-01 17:38:43,216] DEBUG - DataEnricher - Product columns: ['id', 'price', 'category', 'quantity', 'rating']
+[2025-11-01 17:38:43,216] DEBUG - DataEnricher - User columns: ['id', 'email', 'username', 'first_name', 'last_name', 'city', 'phone']
+[2025-11-01 17:38:43,232] INFO - DataEnricher - Enriched data shape: (0, 12)
+[2025-11-01 17:38:43,241] INFO - DataEnricher - Transforming product and user data...
+[2025-11-01 17:38:43,248] DEBUG - DataEnricher - Product columns: ['id', 'price', 'category', 'quantity', 'rating']
+[2025-11-01 17:38:43,248] DEBUG - DataEnricher - User columns: ['id', 'email', 'username', 'first_name', 'last_name', 'city', 'phone']
+[2025-11-01 17:38:43,258] INFO - DataEnricher - Enriched data shape: (1, 12)
+[2025-11-01 17:38:43,264] INFO - DataEnricher - Transforming product and user data...
+[2025-11-01 17:38:43,266] DEBUG - DataEnricher - Product columns: ['id', 'price', 'category', 'quantity', 'rating']
+[2025-11-01 17:38:43,266] DEBUG - DataEnricher - User columns: ['id', 'email', 'username', 'first_name', 'last_name', 'city', 'phone']
+[2025-11-01 17:38:43,282] INFO - DataEnricher - Enriched data shape: (0, 12)
+[2025-11-01 17:38:43,292] INFO - Pipeline - Initializing pipeline...
+[2025-11-01 17:38:43,293] INFO - ConfigManager - Loaded configuration from pipeline.cfg
+[2025-11-01 17:38:43,293] DEBUG - ConfigManager - Base URL: https://fakestoreapi.com
+[2025-11-01 17:38:43,294] DEBUG - ConfigManager - Pagination Limit: 10
+[2025-11-01 17:38:43,299] INFO - Pipeline - 🔧 Starting pipeline...
+[2025-11-01 17:38:43,300] INFO - Pipeline - 📦 Fetching product data...
+[2025-11-01 17:38:43,300] INFO - APIClient - Fetching products from https://fakestoreapi.com/products
+[2025-11-01 17:38:43,306] INFO - APIClient - Fetched 2 products.
+[2025-11-01 17:38:43,306] INFO - APIClient - Paginating products...
+[2025-11-01 17:38:43,306] DEBUG - APIClient - Yielding products 0 to 2
+[2025-11-01 17:38:43,306] INFO - Pipeline - Total products collected: 4
+[2025-11-01 17:38:43,307] INFO - Pipeline - 👤 Fetching user data...
+[2025-11-01 17:38:43,307] INFO - APIClient - Fetching users from https://fakestoreapi.com/users
+[2025-11-01 17:38:43,309] INFO - APIClient - Fetched 2 users.
+[2025-11-01 17:38:43,309] INFO - APIClient - Paginating users...
+[2025-11-01 17:38:43,316] DEBUG - APIClient - Yielding users 0 to 2
+[2025-11-01 17:38:43,316] INFO - Pipeline - Total users collected: 4
+[2025-11-01 17:38:43,316] INFO - Pipeline - 🔗 Enriching data...
+[2025-11-01 17:38:43,317] INFO - DataEnricher - Transforming product and user data...
+[2025-11-01 17:38:43,323] DEBUG - DataEnricher - Product columns: ['id', 'price', 'category', 'quantity', 'rating']
+[2025-11-01 17:38:43,323] DEBUG - DataEnricher - User columns: ['id', 'email', 'username', 'first_name', 'last_name', 'city', 'phone']
+[2025-11-01 17:38:43,334] INFO - DataEnricher - Enriched data shape: (8, 12)
+[2025-11-01 17:38:43,335] INFO - Pipeline - Enriched data shape: (8, 12)
+[2025-11-01 17:38:43,337] INFO - Pipeline - 📊 Analyzing seller performance...
+[2025-11-01 17:38:43,338] INFO - DataAnalyzer - Starting seller performance analysis...
+[2025-11-01 17:38:43,344] DEBUG - DataAnalyzer - user_a: ₦4,000.00 revenue, 4 products, ₦100.00 avg price, 4.50 avg rating, 40 quantity, top category: electronics
+[2025-11-01 17:38:43,349] DEBUG - DataAnalyzer - user_b: ₦4,000.00 revenue, 4 products, ₦200.00 avg price, 4.00 avg rating, 20 quantity, top category: jewelery
+[2025-11-01 17:38:43,353] INFO - DataAnalyzer - Seller performance table generated.
+[2025-11-01 17:38:43,354] INFO - Pipeline - 💾 Saving report to seller_performance_report.json...
+[2025-11-01 17:38:43,356] INFO - Pipeline - 📝 Saving summary to seller_performance_summary.txt...
+[2025-11-01 17:38:43,358] INFO - Pipeline - ✅ Pipeline completed successfully.
