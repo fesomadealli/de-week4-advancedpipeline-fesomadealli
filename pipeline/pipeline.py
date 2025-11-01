@@ -41,11 +41,16 @@ class Pipeline:
 
         # Step 4: Analyze data
         print("📊 Analyzing seller performance...")
-        insights = DataAnalyzer.analyze(enriched_df, show_table=True) 
+        insights, tab_user_stats = DataAnalyzer.analyze(enriched_df, show_table=True)
 
         # Step 5: Save report
-        # print("💾 Saving report to seller_performance_report.json...")
-        # with open("seller_performance_report.json", "w") as f:
-        #     json.dump(insights, f, indent=4)
+        print("💾 Saving report to seller_performance_report.json...")
+        with open("seller_performance_report.json", "w") as f:
+            json.dump(insights, f, indent=4)
 
+        print("📝 Saving summary to seller_performance_summary.txt...")
+        with open("seller_performance_summary.txt", "w", encoding="utf-8") as f:
+            f.write(tab_user_stats)
+
+        
         print("✅ Pipeline completed successfully.")

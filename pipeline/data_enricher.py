@@ -1,13 +1,16 @@
 
-
 import pandas as pd
+from logger.logger import get_logger
 
 class DataEnricher:
     """Combines and cleans product and user data."""
 
+    logger = get_logger("DataEnricher")
+
     @staticmethod
     def enrich_data(products: list, users: list) -> pd.DataFrame:
-        # Transform product data
+        DataEnricher.logger.info("Transforming product and user data...")
+
         product_records = [
             {
                 "id": item.get("id"),
@@ -19,7 +22,6 @@ class DataEnricher:
             for item in products
         ]
 
-        # Transform user data
         user_records = [
             {
                 "id": item.get("id"),
@@ -33,20 +35,15 @@ class DataEnricher:
             for item in users
         ]
 
-        # Convert to DataFrames
         products_df = pd.DataFrame(product_records)
         users_df = pd.DataFrame(user_records)
 
-        print("Products columns:", products_df.columns.tolist())
-        print("Users columns:", users_df.columns.tolist())
+        DataEnricher.logger.debug(f"Product columns: {products_df.columns.tolist()}")
+        DataEnricher.logger.debug(f"User columns: {users_df.columns.tolist()}")
 
-        # Merge product and user data
         enriched_df = pd.merge(products_df, users_df, on="id", how="left")
-
-        # Calculate revenue
         enriched_df["revenue"] = enriched_df["price"] * enriched_df["quantity"]
-
-        # Drop Nulls
         enriched_df = enriched_df.dropna()
 
+        DataEnricher.logger.info(f"Enriched data shape: {enriched_df.shape}")
         return enriched_df

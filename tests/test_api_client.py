@@ -1,6 +1,5 @@
 
 
-
 import pytest
 import requests_mock
 from pipeline.api_client import APIClient

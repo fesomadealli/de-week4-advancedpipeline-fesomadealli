@@ -8,9 +8,9 @@ class DataAnalyzer:
 
     @staticmethod
     def analyze(df: pd.DataFrame, show_table: bool = True) -> dict:
+        pd.set_option('display.float_format', '{:,.2f}'.format)
         # Group by seller
         grouped = df.groupby("username")
-
         insights = {}
 
         for username, group in grouped:
@@ -32,16 +32,20 @@ class DataAnalyzer:
 
         if show_table:
             table = [
-                [user,
-                 data["total_revenue"],
-                 data["products_sold"],
-                 data["average_price"],
-                 data["average_rating"],
-                 data["total_quantity"],
-                 data["top_category"]]
+                [
+                    user,
+                    f"₦{data['total_revenue']:,.2f}",
+                    data["products_sold"],
+                    f"₦{data['average_price']:,.2f}",
+                    f"{data['average_rating']:.2f}",
+                    data["total_quantity"],
+                    data["top_category"]
+                ]
                 for user, data in insights.items()
             ]
+            
             headers = ["Username", "Total Revenue", "Products Sold", "Avg Price", "Avg Rating", "Total Quantity", "Top Category"]
-            print(tabulate(table, headers=headers, tablefmt="grid"))
+            tab_user_stats = tabulate(table, headers=headers, tablefmt="grid")
+            print(tab_user_stats)
 
-        return insights
+        return insights, tab_user_stats
